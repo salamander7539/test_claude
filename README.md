@@ -20,7 +20,7 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone <ссылка-на-ваш-репозиторий>
+git clone https://github.com/salamander7539/test_claude/
 cd react-timeseries-chart
 ```
 
