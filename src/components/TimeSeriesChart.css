@@ -1,0 +1,67 @@
+/* Animations for active dots */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes expandCircle {
+  from {
+    r: 0;
+    opacity: 0;
+  }
+  to {
+    r: 15;
+    opacity: 0.3;
+  }
+}
+
+@keyframes shrinkCircle {
+  from {
+    r: 15;
+    opacity: 0.3;
+  }
+  to {
+    r: 0;
+    opacity: 0;
+  }
+}
+
+.active-dot-center {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+.active-dot-background {
+  animation: expandCircle 0.3s ease-out forwards;
+  transform-origin: center;
+}
+
+.active-dot-exit {
+  animation: fadeOut 0.2s ease-in forwards;
+}
+
+/* Green line hover effect - thin on hover */
+.recharts-line-curve[stroke="#0b8401"] {
+  stroke-width: 2;
+  transition: stroke-width 0.1s ease;
+}
+
+.recharts-line-curve[stroke="#0b8401"]:hover {
+  stroke-width: 1;
+}
